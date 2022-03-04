@@ -1,0 +1,1 @@
+@extends('layouts.app', ['page'=>'Edit Supp lier', 'pageSlug'=>''])
