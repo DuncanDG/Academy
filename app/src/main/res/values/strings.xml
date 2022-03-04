@@ -1,0 +1,48 @@
+<resources>
+    <string name="logo">A</string>
+    <string name="app_name">Academy</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Let\'s join us and \nBuild your relationship with others</string>
+    <string name="swipe_right_for_login">Swipe Right for Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_name">Full Name</string>
+    <string name="profile">Profile</string>
+    <string name="info">Info</string>
+    <string name="logout">Logout</string>
+
+    <string name="error_email">Please enter your Email</string>
+    <string name="error_password">Please enter your Password</string>
+    <string name="error2_email">Please enter the correct Email</string>
+    <string name="error2_password">Please enter the correct Password</string>
+    <string name="error_login">Logging Failed, Please try again</string>
+
+    <string name="offered">Courses Offered</string>
+    <string name="work">Course Work</string>
+    <string name="fees">Fees Structure</string>
+    <string name="attend">Attendance</string>
+    <string name="registration">Registration</string>
+</resources>
