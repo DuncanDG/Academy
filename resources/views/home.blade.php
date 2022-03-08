@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['page'=>'Home','pageSlug' => 'home'])
 
 @section('content')
 <div class="container">
@@ -13,7 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    <hr>
+                        <img class="avatar" src="{{ asset('img/default-avatar.png') }}" alt="">
+                        <p>{{ __(auth()->user()->name) }}</p>
+                        <a href="mailto:admin@black.com">{{auth()->user()->email}}</a>
+                        <hr>
                     {{ __('You are logged in!') }}
                 </div>
             </div>

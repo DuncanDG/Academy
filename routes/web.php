@@ -44,8 +44,8 @@ Auth::routes(['register' => true]);
 
 Route::group(['middleware' => 'auth'],function () {
     //homepage
-   Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-   Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
+   Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+   Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
 
    //Profile link 
    Route::get('profile', 'ProfileController@edit')->name('profile.edit');

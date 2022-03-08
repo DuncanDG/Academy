@@ -2,7 +2,7 @@
     <div class="sidebar-wrapper">
         <div class="logo">
             <a href="#" class="simple-text logo-mini">{{ __('Hi ') }}</a>
-            <a href="#" class="simple-text logo-normal">{{ __(auth()->user()->name) }}</a>
+            <a href="{{ route('home') }}" class="simple-text logo-normal">{{ __(auth()->user()->name) }}</a>
         </div>
         <ul class="nav">
             <li @if ($pageSlug == 'dashboard') class="active " @endif>
