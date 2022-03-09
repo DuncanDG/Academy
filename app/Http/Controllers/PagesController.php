@@ -8,6 +8,7 @@ class PagesController extends Controller
 {
     //
     public function index(){
-        return view('welcome')->header("Refresh", "10;url=/login");
+        $header = 'SSAPP';
+        return response()->view('welcome',  compact('header'))->header("Refresh", "20;url=/login");
     }
 }
