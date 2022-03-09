@@ -8,6 +8,6 @@ class PagesController extends Controller
 {
     //
     public function index(){
-        return view('welcome');
+        return view('welcome')->header("Refresh", "10;url=/login");
     }
 }

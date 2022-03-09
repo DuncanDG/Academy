@@ -77,13 +77,18 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Category $category)
     {
         //display the details of the item
-        $categories = Category::find($id);
-        $products = Product::where('category_id',$categories->id);
+        // $categories = Category::find($id);
+        // $products = Product::where('category_id',$categories->id);
 
-        return view('inventory.categories.show')->withCategory($categories)->withProduct($products);
+        // return view('inventory.categories.show')->withCategory($categories)->withProduct($products);
+
+        return view('inventory.categories.show', [
+            'category' => $category,
+            'products' => Product::where('category_id', $category->id)->paginate(25)
+        ]);
     }
 
     /**

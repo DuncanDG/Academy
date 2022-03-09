@@ -59,11 +59,11 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //validate the form 
-        // $this->validate($request,[
-        //    'name'     => 'required|max:255|min:2',
-        //    'category' => 'required|integer',
-        //    'description'=> 'required'
-        // ]);
+        $this->validate($request,[
+           'name'     => 'required|max:255|min:2',
+           'description'=> 'required|max:255|min:2',
+           'stock'=> 'required|integer'
+        ]);
 
         //get the data from the form
         //'name', 'description', 'category_id', 'price', 'stock', 'stock_defective'
@@ -71,6 +71,7 @@ class ProductController extends Controller
         $product = new Product;
         $product ->name = $request->name;
         $product ->category_id = $request->category_id;
+        $product ->description = $request->description;
         $product ->price = $request->price;
         $product ->stock = $request->stock;
         $product ->stock_defective = $request->stock_defective;
